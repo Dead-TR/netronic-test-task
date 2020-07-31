@@ -1,0 +1,39 @@
+.circle {
+
+  &__item {
+    border-radius: 50%;
+    position: absolute;
+
+    &_yellow {
+      height: 25px;
+      width: 25px;
+      background-color: #FFB000;
+    }
+
+    &_blue {
+      height: 15px;
+      width: 15px;
+      background-color: #00C2EE;
+    }
+  }
+}
+
+#circle-yellow-1 {
+  top: 55%;
+  left: 15%;
+}
+
+#circle-yellow-2 {
+  top: 30%;
+  right: 10%;
+}
+
+#circle-blue-1 {
+  top: 25%;
+  left: 20%;
+}
+
+#circle-blue-2 {
+  top: 40%;
+  right: 20%;
+}

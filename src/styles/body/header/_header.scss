@@ -1,0 +1,61 @@
+@import "./roof";
+@import "./circle";
+
+.header {
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+
+  &__video {
+    position: relative;
+    display: flex;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__video-item {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__content {
+    max-width: $content-width;
+    margin: 100px auto;
+  }
+
+  &__title {
+    @include fonts-style ("Proxima Nova", 200, 52px, normal, 70px, white);
+    max-width: 570px;
+  }
+
+  &__text {
+    @include fonts-style ("Proxima Nova", 200, 18px, normal, 26px, #A8A8A8);
+    letter-spacing: 1.08px;
+  }
+
+  &__URL {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__URL-video {
+    @include fonts-style ("Proxima Nova", normal, 14px, normal, 17px, #A8A8A8);
+    display: flex;
+    align-items: center;
+  }
+
+  &__URL-ico {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #00BC87;
+    border-radius: 50%;
+    margin-left: 24px;
+  }
+
+  &__URL-social {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.roof {
+  margin: 0 auto;
+  max-width: $content-width;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    max-width: 167px;
+  }
+
+  &__navigation {
+
+  }
+
+  &__navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__navigation-item {
+    @include fonts-style ("Proxima Nova", normal, 16px, normal, 20px, white);
+    margin-left: 60px;
+  }
+}
