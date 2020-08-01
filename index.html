@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/png"
+    >
+    <script type="text/javascript" src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="overlap"></div>
+    
+    <header class="header">
+
+      <div class="header__video">
+        <video class="header__video-item" loop="loop" autoplay="" muted="" >
+          <source src="./images/header/videoplayback.mp4" type="video/mp4" /> 
+        </video>
+      </div>
+
+      <section class="header__roof roof">
+        <img src="./images/header/roof/logo.png" alt="logo" class="roof__logo">
+        <nav class="roof__navigation">
+          <ul class="roof__navigation-list">
+
+            <li class="roof__navigation-list-item" id="about">
+              <a href="" class="roof__navigation-item">О нас <div></div></a>
+              <ul class="roof__navigation-drop">
+                <div></div>
+
+                <li class="roof__navigation-drop-item">
+                  <img src="./images/header/roof/blaster.svg" alt="лазертаг">
+                  <a href="">Что такое лазертаг</a>
+                </li>
+
+                <li class="roof__navigation-drop-item">
+                  <img src="./images/header/roof/sports_kabaddi.svg" alt="правила">
+                  <a href="">Правила посeщения</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="roof__navigation-list-item">
+              <a href="" class="roof__navigation-item">Тарифы</a> 
+            </li>
+
+            <li class="roof__navigation-list-item">
+              <a href="" class="roof__navigation-item">3D-тур</a> 
+            </li>
+
+            <li class="roof__navigation-list-item">
+              <a href="" class="roof__navigation-item">Контакты</a> 
+            </li>
+
+            <li class="roof__navigation-item">
+              <button type="button" class="button button_green">
+                Заказать игру
+              </button>
+            </li>
+
+          </ul>
+        </nav>
+      </section>
+
+      <section class="header__content">
+        <h1 class="header__title">Лазертаг приключения в городе будущего</h1>
+        <p class="header__text">Игровая арена общей площадью в 300 м<sup>2</sup></p>
+        <div class="header__URL">
+
+          <a class="header__URL-video" href="#">
+            Посмотреть полную версию
+            <div class="header__URL-ico">
+              <img src="./images/header/play.svg" alt="play">
+            </div>
+          </a>
+
+          <div>
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/facebook.svg"
+                alt="facebook"
+              >
+            </a>
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/Instagram.svg"
+                alt="Instagram"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="header__circle circle">
+        <div class="circle__item circle__item_yellow" id="circle-yellow-1"></div>
+        <div class="circle__item circle__item_yellow" id="circle-yellow-2"></div>
+        <div class="circle__item circle__item_blue" id="circle-blue-1"></div>
+        <div class="circle__item circle__item_blue" id="circle-blue-2"></div>
+      </div>
+
+      <section class="header__full-video full-video">
+        <iframe
+          class="full-video__item"
+          width="860"
+          height="520"
+          src="https://www.youtube.com/embed/aFCs8ScT4BQ"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture
+          "
+          allowfullscreen
+        >
+        </iframe>
+        <div class="full-video__cross"></div>
+
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="main__tariff tariff">
+
+        <div class="tariff__card t-card">
+          <div class="t-card__logo t-card__logo_green"><img src="./images/main/tariff/t-card/cake.svg" alt="cake"></div>
+          <h1 class="t-card__title">День рождения</h1>
+          <p class="t-card__text">Праздник в атмосфере увлекательной игры</p>
+          <button class="button button_green t-card__button t-card__button_active">подробнее</button>
+        </div>
+
+        <div class="tariff__card t-card">
+          <div class="t-card__logo t-card__logo_pink"><img src="./images/main/tariff/t-card/people.svg" alt="cake"></div>
+          <h1 class="t-card__title">Корпортив</h1>
+          <p class="t-card__text">Лазертаг-турниры для больших компаний</p>
+          <button class="button t-card__button">подробнее</button>
+        </div>
+
+        <div class="tariff__card t-card">
+          <div class="t-card__logo t-card__logo_yellow"><img src="./images/main/tariff/t-card/face.svg" alt="cake"></div>
+          <h1 class="t-card__title">Школьный тариф</h1>
+          <p class="t-card__text">Предложения для школьных групп от 12 чел</p>
+          <button class="button t-card__button">подробнее</button>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+  </body>
+</html>
