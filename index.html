@@ -10,7 +10,6 @@
       href="./images/favicon.png"
       type="image/png"
     >
-    <script type="text/javascript" src="scripts/main.js" defer></script>
   </head>
   <body>
     <div class="overlap"></div>
@@ -129,6 +128,7 @@
 
     <main class="main">
       <section class="main__tariff tariff">
+      <div class="tariff__arrow"></div>
 
         <div class="tariff__card t-card">
           <div class="t-card__logo t-card__logo_green"><img src="./images/main/tariff/t-card/cake.svg" alt="cake"></div>
@@ -152,10 +152,287 @@
         </div>
 
       </section>
+
+      <section class="main__about about">
+
+        <div class="about__card a-card">
+          <h1 class="a-card__main-title">От 5 лет</h1>
+          <h2 class="a-card__minor-title">Безопасно и весело</h2>
+          <p class="a-card__text">
+            Для игры используются облегченные игровые комплекты,
+            с ними комфортно играть детям от 5 лет.
+          </p>
+        </div>
+
+        <div class="about__card a-card">
+          <h1 class="a-card__main-title">300м2</h1>
+          <h2 class="a-card__minor-title">Город будущего</h2>
+          <p class="a-card__text">
+            Арена имеет площадь в 300м2,
+            футуристическое оформление позволяет почувствовать себя в “Городе будущего”.
+          </p>
+        </div>
+
+        <div class="about__card a-card">
+          <h1 class="a-card__main-title">до 20 человек</h1>
+          <h2 class="a-card__minor-title">Вместе интересней</h2>
+          <p class="a-card__text">
+            Арена позволяет проводить мероприятия для большого количества посетителей.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="main__tour tour">
+
+        <img src="./images/main/tour/tour-img.png" alt="3D-Тур" class="tour__img">
+
+        <div class="tour__card tour-card">
+          <h1 class="tour-card__title">Перейти на Арена</h1>
+          <p class="tour-card__text">Лазертаг игра активного отдыха для всех</p>
+
+          <button class="tour-card__button">
+            <p>Посмотреть 3D-Тур</p>
+            <img src="./images/main/tour/tour-card/3d_rotation.svg" alt="">
+          </button>
+
+        </div>
+
+      </section>
+
+      <section class="main__price price">
+        <h1 class="price__title">Наши тарифы</h1>
+
+        <div class="price__sections">
+          <div class="price__single-game">
+  
+            <div class="price-card">
+              <img src="./images/main/price/person.svg" alt="logo" class="price__logo">
+              <h1 class="price-card__title">Одиночная игра</h1>
+              <div class="price-card__data">
+  
+                <p class="price-card__time price-card__time_left">15 мин</p>
+                <p class="price-card__time price-card__time_right"></p>
+  
+                <div class="price-card__price price-card__price_left">
+                  <p>Будний день</p>
+                  <p>150 ₽</p>
+                </div>
+  
+                <div class="price-card__price price-card__price_right">
+                  <p>Выходной день</p>
+                  <p>200 ₽</p>
+                </div>
+  
+                <div class="price-card__add price-card__add_left"></div>
+                <div class="price-card__add price-card__add_right"></div>
+  
+                <p class="price-card__end-text"></p>
+                <p class="price-card__end-price"></p>
+  
+              </div>
+              <button class="button button_white price__button">Заказать игру</button>
+            </div>
+  
+          </div>
+  
+          <div class="price__command-game">
+  
+            <div class="price-card">
+
+              <img src="./images/main/price/people.svg" alt="logo" class="price__logo">
+              <h1 class="price-card__title">Аренда арены от 6 чел</h1>
+              <div class="price-card__data">
+  
+                <p class="price-card__time price-card__time_left price-card_gray">
+                  30 мин
+                  <img
+                    src="./images/main/price/price-card/toggle_on.svg"
+                    alt="toggle"
+                    class="price-card__toggle"
+                    data-active="60min"
+                  >
+                </p>
+                <p class="price-card__time price-card__time_right">60 мин</p>
+  
+                <div class="price-card__price price-card__price_left">
+                  <p class="price-card_gray">Будний день</p>
+                  <p>3 000 ₽</p>
+                </div>
+  
+                <div class="price-card__price price-card__price_right">
+                  <p class="price-card_gray">Выходной день</p>
+                  <p>3 600 ₽</p>
+                </div>
+  
+                <div class="price-card__add price-card__add_left">
+                  <p>+500 ₽</p>
+                  <p class="price-card_gray">за игрока свыше 6 человек</p>
+                </div>
+                <div class="price-card__add price-card__add_right">
+                  <p>+600 ₽</p>
+                  <p class="price-card_gray">за игрока свыше 6 человек</p>
+                </div>
+  
+                <p class="price-card__end-text price-card_gray">Аренда зоны отдыха</p>
+                <p class="price-card__end-price">200 ₽/час</p>
+  
+              </div>
+              <button class="button button_white price__button">Заказать игру</button>
+            </div>
+  
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="main__bonus bonus">
+        <img
+          src="./images/main/bonus/apple_card.png"
+          alt="bonus"
+          class="bonus__img"
+        >
+        <div class="bonus__content">
+          <h1 class="bonus__title">Воспользуйся бонусом</h1>
+          <p class="bonus__text">
+            В честь открытия новой сети лазертаг-арен Galaxy,
+            действует акция с 10.05 по 25.06.2020
+          </p>
+          <ul class="bonus__list">
+            <li class="bonus__list-item">
+              <p class="bonus__list-number bonus__list-number_green">1</p>
+              <p class="bonus__list-text">Подпишись на Instagram</p>
+            </li>
+            <li class="bonus__list-item">
+              <p class="bonus__list-number bonus__list-number_pink">2</p>
+              <p class="bonus__list-text">Покажи админу</p>
+            </li>
+            <li class="bonus__list-item">
+              <p class="bonus__list-number bonus__list-number_yellow">3</p>
+              <p class="bonus__list-text">Получи скидку <span>15%</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
+      <section class="footer__map map">
+        <div class="map__map-item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.699259670076!2d36.569593051466065!3d50.632703381995896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41266b303d5f3641%3A0x44ea2d51ae8bf8b3!2sMegagrinn!5e0!3m2!1suk!2sua!4v1596533169882!5m2!1suk!2sua"
+            width="870"
+            height="350"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
+        </div>
+
+        <div class="map__content">
+          <div class="map__contacts">
+            <a href="tel:+74722364494">+7 (4722) 36-44-94</a>
+            <a href="mailto:spacearena.kh@gmail.com">spacearena.kh@gmail.com</a>
+          </div>
+
+          <p class="map__adress">
+            Россия, г.Белгород, пр-т Б. Хмельницкого, д. 137Т
+          </p>
+
+          <p class="map__adress">
+            4 этаж, внутри Парк развлечений «Гринландия»
+          </p>
+        </div>
+      </section>
+
+      <section class="footer__order order">
+
+        <div class="order__empty">
+          <img src="./images/footer/order/arrUp.svg" alt="arrow" class="order__arrow">
+        </div>
+
+        <div class="order__content">
+          <p class="order__title">Закажи игру</p>
+
+          <form class="order__form o-form">
+            <input
+              class="o-form__item"
+              type="text"
+              placeholder="Имя"
+              required
+            >
+            <input
+              class="o-form__item"
+              type="number"
+              placeholder="Телефон"
+              required
+            >
+            <button type="submit" class="button button_green o-form__button">
+              Заказать игру
+            </button>
+          </form>
+
+        </div>
+
+      </section>
+
+      <section class="footer__nav">
+        <nav class="nav">
+
+          <ul class="nav__list">
+
+            <li class="nav__list-item">
+              <img src="./images/header/roof/logo.png" alt="logo" class="roof__logo">
+            </li>
+
+            <li class="nav__list-item">
+              <a href="" class="nav__item">Что такое лазертаг</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="" class="nav__item">Правила посeщения</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="" class="nav__item">Тарифы</a> 
+            </li>
+
+            <li class="nav__list-item">
+              <a href="" class="nav__item">3D-тур</a> 
+            </li>
+
+            <li class="nav__list-item">
+              <a href="" class="nav__item">Контакты</a> 
+            </li>
+
+          </ul>
+
+          <div class="nav__social">
+            <a href="" class="header__URL-social">
+              <img src="./images/header/facebook.svg" alt="facebook">
+            </a>
+
+            <a href="" class="header__URL-social">
+              <img src="./images/header/Instagram.svg" alt="Instagram">
+            </a>
+          </div>
+        </nav>
+
+        <div class="footer__policy policy">
+          <div class="policy__urls">
+            <a href="" class="policy__text">Политика конфиденциальности</a>
+            <a href="" class="policy__text">Про Cookie</a>
+          </div>
+          <p class="policy__copyright policy__text">
+            © 2020 Galaxy
+          </p>
+        </div>
+      </section>
     </footer>
 
   </body>
+  <script type="text/javascript" src="scripts/main.js" defer></script>
 </html>

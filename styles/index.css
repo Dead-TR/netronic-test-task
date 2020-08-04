@@ -40,6 +40,9 @@ body {
   z-index: 1;
   display: none; }
 
+html {
+  font-family: "Proxima Nova", "Roboto", Arial, sans-serif; }
+
 .roof {
   margin: 0 auto;
   max-width: 1200px;
@@ -297,10 +300,305 @@ body {
       border: none; }
 
 .tariff {
+  position: relative;
   background: #DCDCDC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .tariff__arrow {
+    position: absolute;
+    height: 45px;
+    width: 30px;
+    background: url(../images/main/arrDown.svg) no-repeat center;
+    background-size: cover;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 150px;
+    left: -140px; }
+
+.a-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+  margin-top: 150px;
+  margin-bottom: 400px; }
+  .a-card__main-title {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 52px;
+    color: white;
+    font-style: normal;
+    line-height: 77px;
+    margin: 0 0 25px; }
+  .a-card__minor-title {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #00BC87;
+    font-style: normal;
+    line-height: 34px;
+    min-height: 74px;
+    margin: 0 0 25px; }
+  .a-card__text {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #BFBFBF;
+    font-style: normal;
+    line-height: 26px;
+    opacity: 0.8; }
+
+.about {
+  background: #07141E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .about__card {
+    max-width: 370px; }
+
+.tour-card {
+  background: #DCDCDC;
+  position: absolute;
+  bottom: -0;
+  left: 30%;
+  padding: 35px 50px; }
+  .tour-card__title {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #1A1A1A;
+    font-style: normal;
+    line-height: 34px;
+    min-height: 50px; }
+  .tour-card__text {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #717171;
+    font-style: normal;
+    line-height: 26px;
+    opacity: 0.8;
+    margin-bottom: 40px; }
+  .tour-card__button {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #1A1A1A;
+    font-style: normal;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 57px;
+    border: 1px solid #717171;
+    border-radius: 5px;
+    background: inherit; }
+
+.tour {
+  position: relative; }
+  .tour__card {
+    z-index: 2; }
+  .tour__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1; }
+
+.price-card {
+  margin-top: 60px; }
+  .price-card_gray {
+    color: #717171; }
+  .price-card__title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    margin: 0 0 50px; }
+  .price-card__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "time_left time_right" "price_left price_right" "add_left add_right" "end-text end-price";
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .price-card__time {
+    position: relative;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px; }
+    .price-card__time_left {
+      grid-area: time_left; }
+    .price-card__time_right {
+      grid-area: time_right; }
+  .price-card__price :first-child {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 31px; }
+  .price-card__price :last-child {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px; }
+  .price-card__price_left {
+    grid-area: price_left; }
+  .price-card__price_right {
+    grid-area: price_right; }
+  .price-card__add :first-child {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px; }
+  .price-card__add :last-child {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 31px;
+    letter-spacing: 0.72px; }
+  .price-card__add_left {
+    grid-area: add_left; }
+  .price-card__add_right {
+    grid-area: add_right; }
+  .price-card__end-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 31px;
+    grid-area: end-text; }
+  .price-card__end-price {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    grid-area: end-price; }
+  .price-card__toggle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 100%; }
+  .price__title {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 52px;
+    color: white;
+    font-style: normal;
+    line-height: 77px;
+    margin: 0 180px;
+    width: 100%;
+    position: absolute;
+    top: 100px; }
+  .price__sections {
+    margin-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: 750px; }
+  .price__logo {
+    margin: 40px 0 0; }
+  .price__single-game {
+    color: white;
+    width: 100%; }
+    .price__single-game .price-card {
+      margin-left: 180px; }
+  .price__command-game {
+    color: black;
+    background: #DCDCDC;
+    min-height: 750px;
+    width: 100%; }
+    .price__command-game .price-card {
+      margin-left: 90px; }
+  .price__button {
+    position: absolute;
+    bottom: 80px; }
+
+.bonus {
+  max-width: 1200px;
+  margin: 90px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .bonus__img {
+    max-width: 600px;
+    margin-right: 100px; }
+  .bonus__content {
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #1A1A1A; }
+  .bonus__title {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 65px; }
+  .bonus__text {
+    margin-top: 25px;
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #717171;
+    font-style: normal;
+    line-height: 26px; }
+  .bonus__list {
+    margin-top: 50px; }
+  .bonus__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px; }
+  .bonus__list-number {
+    width: 50px;
+    height: 30px;
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+    line-height: 31px;
+    border-radius: 17px;
+    text-align: center;
+    margin-right: 50px; }
+    .bonus__list-number_green {
+      background: #00BC87; }
+    .bonus__list-number_pink {
+      background: #D00090; }
+    .bonus__list-number_yellow {
+      background: #FFB000; }
+  .bonus__list-text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px; }
+    .bonus__list-text span {
+      color: #00BC87; }
 
 .main {
   position: relative;
@@ -319,5 +617,230 @@ body {
     height: 512px;
     -ms-flex-item-align: end;
         align-self: flex-end; }
+  .main__about {
+    width: 100%; }
+  .main__price {
+    max-width: 1500px;
+    width: 100%;
+    background: #00BC87;
+    margin: 400px auto 0; }
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #1C262E; }
+  .map__content {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 870px; }
+  .map__contacts {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .map__contacts a {
+      color: white;
+      margin-bottom: 30px; }
+  .map__adress {
+    margin-right: 30px;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px; }
+
+.o-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 230px;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .o-form__item {
+    height: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+    line-height: 31px; }
+    .o-form__item::-webkit-input-placeholder {
+      font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      font-style: normal;
+      line-height: 31px; }
+    .o-form__item::-moz-placeholder {
+      font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      font-style: normal;
+      line-height: 31px; }
+    .o-form__item:-ms-input-placeholder {
+      font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      font-style: normal;
+      line-height: 31px; }
+    .o-form__item::-ms-input-placeholder {
+      font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      font-style: normal;
+      line-height: 31px; }
+    .o-form__item::placeholder {
+      font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      font-style: normal;
+      line-height: 31px; }
+    .o-form__item::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+  .o-form__button {
+    margin-top: 90px; }
+
+.order__empty {
+  height: 150px;
+  width: 100%;
+  background: transparent; }
+
+.order__arrow {
+  margin: 50px 70px;
+  height: 45px;
+  width: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center; }
+
+.order__content {
+  padding: 50px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #07141E;
+  height: calc(100% - 150px);
+  color: white; }
+
+.order__title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px; }
+
+.nav {
+  max-width: 1200px;
+  margin: 90px auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    position: relative; }
+  .nav__list-item {
+    margin-right: 60px; }
+  .nav__item {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .nav__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.policy {
+  border-top: 1px solid #717171;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  color: #717171;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .policy__urls {
+    margin-top: 30px; }
+    .policy__urls :last-child {
+      margin-left: 35px; }
+  .policy__text {
+    font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #717171;
+    font-style: normal;
+    line-height: 31px; }
+  .policy__copyright {
+    margin-top: 30px; }
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "map map order" "nav nav nav"; }
+  .footer__map {
+    grid-area: map; }
+  .footer__order {
+    grid-area: order; }
+  .footer__nav {
+    grid-area: nav;
+    background: #07141E; }
 
 /*# sourceMappingURL=index.css.map */
