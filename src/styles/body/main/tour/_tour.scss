@@ -1,0 +1,16 @@
+@import "./tour-card/tour-card";
+
+.tour {
+  position: relative;
+
+  &__card {
+    z-index: 2;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}

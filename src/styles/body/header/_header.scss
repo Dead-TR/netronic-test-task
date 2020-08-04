@@ -1,5 +1,6 @@
 @import "./roof";
 @import "./circle";
+@import "./full-video";
 
 .header {
   max-width: $max-width;
@@ -58,5 +59,9 @@
 
   &__URL-social {
     margin-left: 30px;
+  }
+
+  &__full-video {
+    width: 100%;
   }
 }

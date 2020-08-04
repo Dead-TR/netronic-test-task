@@ -1,0 +1,39 @@
+@import "./tariff/tariff";
+@import "./about/about";
+@import "./tour/tour";
+@import "./price/price";
+@import "./bonus/bonus";
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  
+  &__tariff {
+    width: 1346px;
+    height: 512px;
+    align-self: flex-end;
+  }
+
+  &__about {
+    width: 100%;
+  }
+
+  &__tour {
+
+  }
+
+  &__price {
+    max-width: 1500px;
+    width: 100%;
+    background: #00BC87;
+    margin: 400px auto 0;
+  }
+
+  &__bonus {
+    
+  }
+}

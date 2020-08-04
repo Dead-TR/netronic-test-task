@@ -1,0 +1,19 @@
+@import "./t-card/t-card";
+
+.tariff {
+  position: relative;
+  background: #DCDCDC;
+  display: flex;
+
+  &__arrow {
+    position: absolute;
+    height: 45px;
+    width: 30px;
+    background: url(../../../images/main/arrDown.svg) no-repeat center;
+    background-size: cover;
+
+    align-self: center;
+    margin-top: 150px;
+    left: -140px;
+  }
+}

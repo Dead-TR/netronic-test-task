@@ -1,0 +1,55 @@
+@import "./price-card/price-card";
+
+$gray-price-block: 750px;
+
+.price {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+
+  &__title {
+    @include fonts-style ("Proxima Nova", 300, 52px, normal, 77px, white);
+    margin: 0 180px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+  }
+
+  &__sections {
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-start;
+    min-height: $gray-price-block;
+  }
+
+  &__logo {
+    margin: 40px 0 0;
+  }
+
+  &__single-game {
+    color: white;
+    width: 100%;
+
+    & .price-card {
+      margin-left: 180px;
+
+    }
+  }
+
+  &__command-game {
+    color: black;
+    background: #DCDCDC;
+    min-height: $gray-price-block;
+    width: 100%;
+
+    & .price-card {
+      margin-left: 90px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 80px;
+  } 
+}

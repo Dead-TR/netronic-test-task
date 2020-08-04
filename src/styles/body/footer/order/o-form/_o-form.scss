@@ -1,0 +1,28 @@
+.o-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  height: 100%;
+  justify-content: space-around;
+
+  &__item {
+    height: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    @include fonts-style ("Proxima Nova", 300, 18px, normal, 31px, white);
+
+    &::placeholder {
+      @include fonts-style ("Proxima Nova", 300, 18px, normal, 31px, white);
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  &__button {
+    margin-top: 90px;
+  }
+}

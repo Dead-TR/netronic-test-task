@@ -1,0 +1,97 @@
+.price-card {
+  margin-top: 60px;
+
+  &_gray {
+    color: #717171;
+  }
+
+  &__title {
+    @include fonts-compact(300, 28px, 31px);
+    margin: 0 0 50px;
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "time_left time_right"
+      "price_left price_right"
+      "add_left add_right"
+      "end-text end-price";
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    align-items: flex-start;
+  }
+
+  &__time {
+    position: relative;
+    @include fonts-compact(normal, 22px, 31px);
+
+    &_left {
+      grid-area: time_left;
+    }
+
+    &_right {
+      grid-area: time_right;
+    }
+  }
+
+  &__price {
+    & :first-child {
+      @include fonts-compact(300, 16px, 31px);
+    }
+
+    & :last-child {
+      @include fonts-compact(normal, 24px, 31px);
+    }
+
+    &_left {
+      grid-area: price_left;
+    }
+
+    &_right {
+      grid-area: price_right;
+    }
+  }
+
+  &__add {
+
+    & :first-child {
+      @include fonts-compact(normal, 18px, 31px);
+    }
+
+    & :last-child {
+      @include fonts-compact(300, 12px, 31px);
+      letter-spacing: 0.72px;
+    }
+
+    &_left {
+      grid-area: add_left;
+    }
+
+    &_right {
+      grid-area: add_right;
+    }
+  }
+
+  &__end-text {
+    @include fonts-compact(300, 16px, 31px);
+    grid-area: end-text;
+  }
+
+  &__end-price {
+    @include fonts-compact(normal, 24px, 31px);
+    grid-area: end-price;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}

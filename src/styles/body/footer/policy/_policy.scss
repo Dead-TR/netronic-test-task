@@ -1,0 +1,27 @@
+$policy-color: #717171;
+
+.policy {
+  border-top: 1px solid $policy-color;
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto 40px;
+  color: $policy-color;
+  display: flex;
+  justify-content: space-between;
+
+  &__urls {
+    margin-top: 30px;
+
+    & :last-child {
+      margin-left: 35px;
+    }
+  }
+
+  &__text {
+    @include fonts-style ("Proxima Nova", 300, 12px, normal, 31px, $policy-color);
+  }
+
+  &__copyright {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+.a-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-top: 150px;
+  margin-bottom: 400px;
+
+  &__main-title {
+    @include fonts-style ("Proxima Nova", 300, 52px, normal, 77px, white);
+    margin: 0 0 25px;
+  }
+
+  &__minor-title {
+    @include fonts-style ("Proxima Nova", 300, 28px, normal, 34px, #00BC87);
+    min-height: 74px;
+    margin: 0 0 25px;
+  }
+
+  &__text {
+    @include fonts-style ("Proxima Nova", 300, 18px, normal, 26px, #BFBFBF);
+    opacity: 0.8;
+  }
+}

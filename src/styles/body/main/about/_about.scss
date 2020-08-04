@@ -1,0 +1,12 @@
+@import "./a-card/a-card";
+
+.about {
+  background: #07141E;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__card {
+    max-width: 370px;
+  }
+}

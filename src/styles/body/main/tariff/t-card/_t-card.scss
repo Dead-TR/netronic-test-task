@@ -1,0 +1,49 @@
+.t-card {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 100px 100px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 50px;
+    border-radius: 17px;
+
+    &_pink {
+      background: #D00090;
+    }
+
+    &_green {
+      background: #00BC87;
+    }
+
+    &_yellow {
+      background: #FFB000;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    @include fonts-style ("Proxima Nova", normal, 28px, normal, 34px, #1A1A1A);
+  }
+
+  &__text {
+    margin-top: 33px;
+    max-width: 255px;
+    min-height: 80px;
+    @include fonts-style ("Proxima Nova", normal, 18px, normal, 26px, #1A1A1A);
+  }
+
+  &__button {
+    margin-top: 35px;
+    @include fonts-style ("Proxima Nova", normal, 13px, normal, 16px, #474747);
+    text-transform: uppercase;
+    border: 1px solid #474747;
+
+    &_active {
+      border: none;
+    }
+  }
+}

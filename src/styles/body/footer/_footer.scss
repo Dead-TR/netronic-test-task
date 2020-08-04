@@ -1,0 +1,29 @@
+@import "./map/map";
+@import "./order/order";
+@import "./nav/nav";
+@import "./policy/policy";
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "map map order"
+    "nav nav nav";
+
+  &__map {
+    grid-area: map;
+  }
+
+  &__order {
+    grid-area: order;
+  }
+
+  &__nav {
+    grid-area: nav;
+    background: #07141E;
+  }
+}

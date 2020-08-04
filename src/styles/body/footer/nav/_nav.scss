@@ -1,0 +1,30 @@
+.nav {
+  max-width: $content-width;
+  margin: 90px auto 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+  }
+
+
+  &__list-item {
+    margin-right: 60px;
+  }
+
+  &__item {
+    @include fonts-style ("Proxima Nova", normal, 16px, normal, 20px, white);
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+}
