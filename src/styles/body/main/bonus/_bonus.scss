@@ -1,11 +1,13 @@
 .bonus {
   max-width: $content-width;
-  margin: 90px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 
   &__img {
     max-width: 600px;
+    width: 100%;
     margin-right: 100px;
   }
 
@@ -59,6 +61,49 @@
 
     & span {
       color: #00BC87;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bonus {
+    &__content,
+    &__img {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bonus {
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      display: inline-block;
+      margin: 50px auto 0;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .bonus {
+
+    &__title {
+      @include fonts-compact(300, 40px, 100%);
     }
   }
 }

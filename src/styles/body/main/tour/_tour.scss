@@ -5,6 +5,7 @@
 
   &__card {
     z-index: 2;
+    left: 30%;
   }
 
   &__img {
@@ -12,5 +13,14 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .tour {
+  
+    &__card {
+      left: 0;
+    }
   }
 }

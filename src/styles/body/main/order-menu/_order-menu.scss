@@ -1,0 +1,76 @@
+.order-menu {
+  width: 100%;
+  max-width: 860px;
+  height: 580px;
+  background: #07141E;
+
+  position: fixed;
+  top: 20%;
+  align-self: center;
+  z-index: 5;
+
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    width: 70%;
+    text-align: left;
+
+    @include fonts-style ("Proxima Nova", 300, 28px, normal, 38px, #00BC87);
+  }
+
+  &__form {
+    width: 70%;
+
+    & :first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__item {
+    width: 45%;
+    height: 70px;
+    margin-bottom: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #717171;
+    @include fonts-style ("Proxima Nova", 300, 18px, normal, 31px, #717171);
+
+    &::placeholder {
+      @include fonts-style ("Proxima Nova", 300, 18px, normal, 31px, #717171);
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  &__button {
+
+  }
+
+  &__police {
+    @include fonts-style ("Proxima Nova", 300, 12px, normal, 22px, #828282);
+    letter-spacing: 0;
+    width: 70%;
+    text-align: left;
+    margin-top: 70px;
+  }
+
+  &__cross {
+    z-index: 3;
+    height: 35px;
+    width: 35px;
+    background: #00BC87 url(../images/header/full-video/cross.svg) no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    right: 35px;
+    top: 75px;
+    cursor: pointer;
+  }
+}

@@ -1,9 +1,6 @@
 .a-card {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
-  margin-top: 150px;
-  margin-bottom: 400px;
 
   &__main-title {
     @include fonts-style ("Proxima Nova", 300, 52px, normal, 77px, white);

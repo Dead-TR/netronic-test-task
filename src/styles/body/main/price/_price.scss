@@ -51,5 +51,50 @@ $gray-price-block: 750px;
   &__button {
     position: absolute;
     bottom: 80px;
-  } 
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .price {
+
+    &__title {
+      margin: 0;
+      text-align: center;
+      position: static;
+    }
+
+    &__sections {
+      flex-direction: column;
+    }
+
+    &__single-game {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+  
+      & .price-card {
+        margin: 10px;
+        width: 100%;
+      }
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__command-game {
+  
+      & .price-card {
+        margin: 10px;
+        width: 100%;
+      }
+    }
+
+    &__button {
+      position: relative;
+      bottom: 0;
+      margin: 25px auto;
+    }
+  }
 }

@@ -3,6 +3,7 @@
 @import "./tour/tour";
 @import "./price/price";
 @import "./bonus/bonus";
+@import "./order-menu/order-menu";
 
 .main {
   position: relative;
@@ -26,6 +27,10 @@
 
   }
 
+  &__bonus {
+    margin: 90px auto;
+  }
+
   &__price {
     max-width: 1500px;
     width: 100%;
@@ -33,7 +38,33 @@
     margin: 400px auto 0;
   }
 
-  &__bonus {
+  
+}
+
+@media only screen and (max-width: 1346px) {
+  .main {
+    &__tariff {
+      width: 100%;
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+
+    &__bonus {
     
+    }
+
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .main {
+
+    &__tariff {
+      height: 100%;
+    }
   }
 }

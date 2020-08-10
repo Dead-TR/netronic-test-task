@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link
       rel="shortcut icon"
-      href="./images/favicon.png"
+      href="./images/header/roof/favicon.png"
       type="image/png"
     >
   </head>
@@ -20,10 +20,64 @@
         <video class="header__video-item" loop="loop" autoplay="" muted="" >
           <source src="./images/header/videoplayback.mp4" type="video/mp4" /> 
         </video>
+        <div class="header__video-img"></div>
       </div>
+
 
       <section class="header__roof roof">
         <img src="./images/header/roof/logo.png" alt="logo" class="roof__logo">
+        <div class="roof__nav-btn">
+          <div class="roof__btn roof__btn-one"></div>
+          <div class="roof__btn roof__btn-two"></div>
+        </div>
+        <nav class="roof__mobile-nav mobile-nav">
+          <ul class="mobile-nav__list">
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Что такое лазертаг</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Правила посeщения</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Тарифы</a> 
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">3D-тур</a> 
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Контакты</a> 
+            </li>
+
+          </ul>
+
+          <button type="submit" class="button button_green mobile-nav__button">
+            Заказать игру
+          </button>
+
+          <div class="mobile-nav__social">
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/facebook.svg"
+                alt="facebook"
+              >
+            </a>
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/Instagram.svg"
+                alt="Instagram"
+              >
+            </a>
+          </div>
+
+        </nav>
+
         <nav class="roof__navigation">
           <ul class="roof__navigation-list">
 
@@ -58,7 +112,11 @@
             </li>
 
             <li class="roof__navigation-item">
-              <button type="button" class="button button_green">
+              <button
+                type="button"
+                class="button button_green"
+                id="order-button"
+              >
                 Заказать игру
               </button>
             </li>
@@ -79,8 +137,7 @@
             </div>
           </a>
 
-          <div>
-
+          <div class="header__social">
             <a href="" class="header__URL-social">
               <img
                 src="./images/header/facebook.svg"
@@ -127,6 +184,22 @@
     </header>
 
     <main class="main">
+
+      <div class="main__order-menu order-menu">
+        <div class="order-menu__cross"></div>
+        <h1 class="order-menu__title">Закажи игру</h1>
+
+        <form action="" class="order-menu__form">
+          <input class="order-menu__item" type="text" placeholder="Имя" required>
+          <input class="order-menu__item" type="number" placeholder="Телефон" required>
+          <button type="submit" class="button button_green order-menu__button">
+            Заказать игру
+          </button>
+        </form>
+
+        <p class="order-menu__police">Указанные вами данные не будут передаваться третьим лицам.</p>
+      </div>
+
       <section class="main__tariff tariff">
       <div class="tariff__arrow"></div>
 
