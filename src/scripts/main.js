@@ -158,3 +158,31 @@ navBtn.addEventListener('click', (event) => {
   navigation.classList.toggle('mobile-nav_active');
   // navBtn.classList.toggle('roof__nav-btn_active');
 });
+
+// map width
+const footer = document.querySelector('.footer');
+console.log("footer.offsetWidth", footer.offsetWidth)
+
+if (footer.offsetWidth <= 1300 && footer.offsetWidth > 600) {
+  const footerOrder = document.querySelector('.footer__order');
+  const mapItem = document.querySelector('.map__map-item').firstElementChild;
+
+  mapItem.width = footer.offsetWidth - footerOrder.offsetWidth;
+};
+
+if (footer.offsetWidth <= 600) {
+  const mapItem = document.querySelector('.map__map-item').firstElementChild;
+
+  mapItem.width = footer.offsetWidth;
+}
+
+// footer navigation
+
+const footerNavBtn = document.querySelector('.nav__btn');
+
+footerNavBtn.addEventListener('click', () => {
+  const footerNavigation = document.querySelector('.nav');
+
+  footerNavigation.classList.toggle('nav_active');
+  footerNavBtn.classList.toggle('nav__btn_active');
+});

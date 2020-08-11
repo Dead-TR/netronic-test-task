@@ -32,3 +32,18 @@
 
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .order {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__empty {
+      display: none;
+    }
+  }
+}

@@ -11,17 +11,27 @@ $policy-color: #717171;
 
   &__urls {
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
 
-    & :last-child {
-      margin-left: 35px;
-    }
+    // & :last-child {
+    //   margin-left: 35px;
+    // }
   }
 
   &__text {
     @include fonts-style ("Proxima Nova", 300, 12px, normal, 31px, $policy-color);
+    margin-left: 35px;
   }
 
   &__copyright {
     margin-top: 30px;
+    margin-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .policy {
+    flex-direction: column;
   }
 }
