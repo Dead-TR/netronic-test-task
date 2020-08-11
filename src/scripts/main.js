@@ -6,7 +6,7 @@ const about = document.querySelector('#about');
 about.addEventListener('click', (event) => {
   const dropDown = document.querySelector('.roof__navigation-drop');
 
-  event.preventDefault();
+  // event.preventDefault();
 
   dropDown.style = `
     visibility: visible;

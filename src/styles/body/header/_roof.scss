@@ -19,6 +19,7 @@
     display: none;
     flex-direction: column;
     justify-content: space-around;
+    cursor: pointer;
   }
 
   &__btn {
@@ -55,13 +56,13 @@
 
   &__navigation-list-item {
     margin-right: 60px;
-    
   }
 
   &__navigation-item {
     @include fonts-style ("Proxima Nova", normal, 16px, normal, 20px, white);
     display: flex;
     align-items: center;
+    cursor: pointer;
     transition: color 1s;
 
     & div {
@@ -109,11 +110,11 @@
   &__navigation-drop-item {
     display: flex;
     margin: 22px 30px;
+    
 
     & a {
       margin-left: 20px;
       @include fonts-style ("Proxima Nova", normal, 18px, normal, 26px, #717171);
-
       transition: transform 1s;
 
       &:hover {
