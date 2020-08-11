@@ -27,10 +27,6 @@
   &__title {
     @include fonts-compact(300, 28px, 38px);
   }
-
-  &__form {
-
-  }
 }
 
 @media only screen and (max-width: 600px) {

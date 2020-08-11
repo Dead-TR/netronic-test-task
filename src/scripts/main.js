@@ -145,23 +145,17 @@ oCross.addEventListener('click', () => orderVisibility('none'));
 // phone nav
 const navBtn = document.querySelector('.roof__nav-btn');
 
-navBtn.addEventListener('click', (event) => {
+navBtn.addEventListener('click', () => {
   const mobileNavElements = [...navBtn.children];
+  const navigation = document.querySelector('.mobile-nav');
 
   mobileNavElements[0].classList.toggle('roof__btn-one_active');
   mobileNavElements[1].classList.toggle('roof__btn-two_active');
-
-  // roof__btn-one
-
-  const navigation = document.querySelector('.mobile-nav');
-
   navigation.classList.toggle('mobile-nav_active');
-  // navBtn.classList.toggle('roof__nav-btn_active');
 });
 
 // map width
 const footer = document.querySelector('.footer');
-console.log("footer.offsetWidth", footer.offsetWidth)
 
 if (footer.offsetWidth <= 1300 && footer.offsetWidth > 600) {
   const footerOrder = document.querySelector('.footer__order');
