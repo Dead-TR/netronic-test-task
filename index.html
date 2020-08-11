@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link
       rel="shortcut icon"
-      href="./images/favicon.png"
+      href="./images/header/roof/favicon.png"
       type="image/png"
     >
   </head>
@@ -17,13 +17,76 @@
     <header class="header">
 
       <div class="header__video">
-        <video class="header__video-item" loop="loop" autoplay="" muted="" >
+        <video
+          class="header__video-item"
+          loop="loop"
+          autoplay=""
+          muted="" 
+        >
           <source src="./images/header/videoplayback.mp4" type="video/mp4" /> 
         </video>
+        <div class="header__video-img"></div>
       </div>
 
+
       <section class="header__roof roof">
-        <img src="./images/header/roof/logo.png" alt="logo" class="roof__logo">
+        <img
+          src="./images/header/roof/logo.png"
+          alt="logo"
+          class="roof__logo"
+        >
+        <div class="roof__nav-btn">
+          <div class="roof__btn roof__btn-one"></div>
+          <div class="roof__btn roof__btn-two"></div>
+        </div>
+        <nav class="roof__mobile-nav mobile-nav">
+          <ul class="mobile-nav__list">
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Что такое лазертаг</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Правила посeщения</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Тарифы</a> 
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">3D-тур</a> 
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__element">Контакты</a> 
+            </li>
+
+          </ul>
+
+          <button type="submit" class="button button_green mobile-nav__button">
+            Заказать игру
+          </button>
+
+          <div class="mobile-nav__social">
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/facebook.svg"
+                alt="facebook"
+              >
+            </a>
+
+            <a href="" class="header__URL-social">
+              <img
+                src="./images/header/Instagram.svg"
+                alt="Instagram"
+              >
+            </a>
+          </div>
+
+        </nav>
+
         <nav class="roof__navigation">
           <ul class="roof__navigation-list">
 
@@ -58,7 +121,11 @@
             </li>
 
             <li class="roof__navigation-item">
-              <button type="button" class="button button_green">
+              <button
+                type="button"
+                class="button button_green"
+                id="order-button"
+              >
                 Заказать игру
               </button>
             </li>
@@ -79,8 +146,7 @@
             </div>
           </a>
 
-          <div>
-
+          <div class="header__social">
             <a href="" class="header__URL-social">
               <img
                 src="./images/header/facebook.svg"
@@ -127,6 +193,34 @@
     </header>
 
     <main class="main">
+
+      <div class="main__order-menu order-menu">
+        <div class="order-menu__cross"></div>
+        <h1 class="order-menu__title">Закажи игру</h1>
+
+        <form action="" class="order-menu__form">
+          <input
+            class="order-menu__item"
+            type="text"
+            placeholder="Имя"
+            required
+          >
+          <input
+            class="order-menu__item"
+            type="number"
+            placeholder="Телефон"
+            required
+          >
+          <button type="submit" class="button button_green order-menu__button">
+            Заказать игру
+          </button>
+        </form>
+
+        <p class="order-menu__police">
+          Указанные вами данные не будут передаваться третьим лицам.
+        </p>
+      </div>
+
       <section class="main__tariff tariff">
       <div class="tariff__arrow"></div>
 
@@ -185,7 +279,11 @@
 
       <section class="main__tour tour">
 
-        <img src="./images/main/tour/tour-img.png" alt="3D-Тур" class="tour__img">
+        <img
+          src="./images/main/tour/tour-img.png"
+          alt="3D-Тур"
+          class="tour__img"
+        >
 
         <div class="tour__card tour-card">
           <h1 class="tour-card__title">Перейти на Арена</h1>
@@ -207,7 +305,11 @@
           <div class="price__single-game">
   
             <div class="price-card">
-              <img src="./images/main/price/person.svg" alt="logo" class="price__logo">
+              <img
+                src="./images/main/price/person.svg"
+                alt="logo"
+                class="price__logo"
+              >
               <h1 class="price-card__title">Одиночная игра</h1>
               <div class="price-card__data">
   
@@ -240,7 +342,11 @@
   
             <div class="price-card">
 
-              <img src="./images/main/price/people.svg" alt="logo" class="price__logo">
+              <img
+                src="./images/main/price/people.svg"
+                alt="logo"
+                class="price__logo"
+              >
               <h1 class="price-card__title">Аренда арены от 6 чел</h1>
               <div class="price-card__data">
   
@@ -324,7 +430,7 @@
             width="870"
             height="350"
             frameborder="0"
-            style="border:0;"
+            style="border: 0;"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
@@ -338,12 +444,12 @@
             <a href="mailto:spacearena.kh@gmail.com">spacearena.kh@gmail.com</a>
           </div>
 
-          <p class="map__adress">
-            Россия, г.Белгород, пр-т Б. Хмельницкого, д. 137Т
+          <p class="map__address">
+            Россия, г.Белгород,<br> пр-т Б. Хмельницкого, д. 137Т
           </p>
 
-          <p class="map__adress">
-            4 этаж, внутри Парк развлечений «Гринландия»
+          <p class="map__address">
+            4 этаж, внутри<br> Парк развлечений «Гринландия»
           </p>
         </div>
       </section>
@@ -351,7 +457,11 @@
       <section class="footer__order order">
 
         <div class="order__empty">
-          <img src="./images/footer/order/arrUp.svg" alt="arrow" class="order__arrow">
+          <img
+            src="./images/footer/order/arrUp.svg"
+            alt="arrow"
+            class="order__arrow"
+          >
         </div>
 
         <div class="order__content">
@@ -381,11 +491,16 @@
 
       <section class="footer__nav">
         <nav class="nav">
+          <div class="nav__btn"></div>
 
           <ul class="nav__list">
 
             <li class="nav__list-item">
-              <img src="./images/header/roof/logo.png" alt="logo" class="roof__logo">
+              <img
+                src="./images/header/roof/logo.png"
+                alt="logo"
+                class="roof__logo"
+              >
             </li>
 
             <li class="nav__list-item">
