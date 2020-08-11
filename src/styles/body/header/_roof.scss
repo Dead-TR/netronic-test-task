@@ -59,12 +59,14 @@
 
   &__navigation-list-item {
     margin-right: 60px;
+    
   }
 
   &__navigation-item {
     @include fonts-style ("Proxima Nova", normal, 16px, normal, 20px, white);
     display: flex;
     align-items: center;
+    transition: color 1s;
 
     & div {
       margin-left: 10px;
@@ -73,6 +75,15 @@
       border-style: solid;
       border-width: 8px 7px 0;
       border-color: #fff transparent transparent;
+      transition: border-color 1s;
+    }
+
+    &:hover {
+      color: #888;
+
+      & > div {
+        border-color: #888 transparent transparent;
+      }
     }
   }
 
@@ -106,6 +117,12 @@
     & a {
       margin-left: 20px;
       @include fonts-style ("Proxima Nova", normal, 18px, normal, 26px, #717171);
+
+      transition: transform 1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

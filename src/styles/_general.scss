@@ -5,6 +5,11 @@
   outline: none;
   padding: 15px 50px;
   cursor: pointer;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &_green {
     background-color: #00BC87;
@@ -29,4 +34,5 @@
 
 html {
   font-family: "Proxima Nova", "Roboto", Arial, sans-serif;
+  scroll-behavior: smooth;
 }

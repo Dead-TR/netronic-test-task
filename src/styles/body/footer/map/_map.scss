@@ -26,6 +26,11 @@
     & a {
       color: white;
       margin-bottom: 30px;
+      transition: color 1s;
+
+      &:hover {
+        color: #888;
+      }
     }
   }
 

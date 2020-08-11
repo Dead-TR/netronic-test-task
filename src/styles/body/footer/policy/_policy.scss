@@ -14,9 +14,13 @@ $policy-color: #717171;
     display: flex;
     flex-wrap: wrap;
 
-    // & :last-child {
-    //   margin-left: 35px;
-    // }
+    & .policy__text {
+      transition: transform 1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &__text {

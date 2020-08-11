@@ -6,9 +6,8 @@
   position: relative;
   transition: max-height 1s;
 
-  
-
   &__btn {
+    display: none;
     position: absolute;
     z-index: 5;
     height: 30px;
@@ -28,7 +27,7 @@
     justify-content: space-between;
     height: 100%;
     position: relative;
-    display: none;
+    display: flex;
   }
 
   &__list-item {
@@ -39,6 +38,11 @@
     @include fonts-style ("Proxima Nova", normal, 16px, normal, 20px, white);
     display: flex;
     align-items: center;
+    transition: color 1s;
+
+    &:hover {
+      color: #888;
+    }
   }
 
   &__social {
@@ -63,8 +67,11 @@
       max-height: 1000px;
     }
 
+    &__btn {
+      display: block;
+    }
+
     &__list {
-      display: flex;
       flex-direction: column;
       align-items: flex-start;
       margin: 0 0 80px;
